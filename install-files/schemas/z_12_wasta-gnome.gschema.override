@@ -1,0 +1,164 @@
+# z_12_wasta-gnome.gschema.override
+#
+#   If same key overridden in 2 files, "last wins" regarding filenames
+#       (so a "z_10_*" filename would win over a "10_*" filename)
+#
+#   After modifying these .override files, reload with:
+#       glib-compile-schemas /usr/share/glib-2.0/schemas/
+#
+#   2020-07-22 ndm: initial settings for bionic.
+#
+# ==============================================================================
+
+### IBus ###
+[org.desktop.ibus.general]
+use-system-keyboard-layout = false
+
+[org.desktop.ibus.general.hotkey]
+triggers = ['<Control>space']
+
+[org.desktop.ibus.panel]
+custom-font = 'Ubuntu 11'
+xkb-icon-rgba = '#FFFFFF'
+use-custom-font = true
+
+
+### GNOME Desktop ###
+# Categorize app list.
+#   - Any new "folder" has to be listed in "folder-children" and have its own schema.
+#   - The folders are created in a dconf profile in /etc/dconf/profile/
+[org.gnome.desktop.app-folders]
+folder-children = ['Graphics', 'AudioVideo', 'Network', 'Office', 'Development', 'System', 'Settings', 'Utility', 'Game', 'Education', 'Wasta']
+
+[org.gnome.desktop.peripherals.input-devices]
+click-method = 'default'
+disable-while-typing = true
+natural-scroll = false
+tap-to-click = true
+scrolling-method = 'two-finger-scrolling'
+
+[org.gnome.desktop.privacy]
+recent-files-max-age = 30
+
+[org.gnome.desktop.session]
+session-name = 'gnome'
+
+[org.gnome.desktop.sound]
+event-sounds = false
+theme-name = 'freedesktop'
+
+# Make Alt-Tab switch between windows instead of apps.
+[org.gnome.desktop.wm.keybindings]
+show-desktop = ['<Primary><Super>d', '<Primary><Alt>d', '<Super>d']
+switch-applications = []
+switch-applications-backward = []
+switch-windows = ['<Alt>Tab']
+switch-windows-backward = ['<Alt><Shift>Tab']
+
+[org.gnome.desktop.wm.preferences]
+button-layout = ':minimize,maximize,close'
+action-middle-click-titlebar = 'lower'
+
+[org.gnome.eog.ui]
+sidebar = false
+
+[org.gnome.Epiphany]
+default-search = 'DuckDuckGo'
+
+
+### Mutter Preferences ###
+[org.gnome.mutter]
+attach-modal-dialogs = true
+edge-tiling = true
+dynamic-workspaces = true
+workspaces-only-on-primary = true
+focus-change-on-pointer-rest = true
+
+
+### Nautilus Preferences ###
+# Sort folders first (Nautilus refers to FileChooser dialog).
+[org.gtk.Settings.FileChooser]
+sort-directories-first = true
+
+[org.gnome.nautilus.desktop]
+home-icon-visible = false
+
+[org.gnome.nautilus.icon-view]
+default-zoom-level = 'small'
+
+[org.gnome.nautilus.preferences]
+# Bulk renamer.
+# TODO: This doesn't exist in 20.04. Is there another way?
+# bulk-rename-tool = b'thunar --bulk-rename'
+##context-menus-show-all-actions = true
+default-sort-order = 'name'
+open-folder-on-dnd-hover = true
+show-delete-permanently = false
+show-hidden-files = false
+# thumbnail-limit is measured in B in Nemo, MB in nautilus
+thumbnail-limit = uint64 4
+
+[org.gnome.nautilus.window-state]
+sidebar-width = 165
+##side-pane-view = 'places'
+start-with-sidebar = true
+##start-with-status-bar = true
+
+
+### Settings-Daemon  ###
+[org.gnome.settings-daemon.plugins.media-keys]
+home = ['<Ctrl><Shift>h']
+
+[org.gnome.settings-daemon.plugins.power]
+button-power = 'interactive'
+button-sleep = 'suspend'
+critical-battery-action = 'suspend'
+lid-close-suspend-with-external-monitor = true
+##lock-on-suspend = false
+percentage-action = 5
+percentage-critical = 10
+percentage-low = 15
+power-button-action = 'interactive'
+##sleep-display-battery = 1200
+sleep-inactive-battery-timeout = 1800
+use-time-for-policy = false
+
+[org.gnome.settings-daemon.plugins.xsettings]
+antialiasing = 'rgba'
+
+
+### GNOME Shell & Extensions ###
+[org.gnome.shell.extensions.dash-to-dock]
+autohide = true
+background-opacity = 0.9
+click-action = 'focus-or-previews'
+custom-theme-shrink = true
+custom-theme-customize-running-dots = true
+#custom-theme-running-dots-color = '#e95420'
+custom-theme-running-dots-color = '#1e90ff'
+custom-theme-running-dots-border-color = '#1e90ff'
+dash-max-icon-size = 36
+dock-fixed = true
+dock-position = 'BOTTOM'
+extend-height = true
+intellihide = false
+intellihide-mode = 'ALL_WINDOWS'
+# Put "apps" button at the "top" (left) end of dock.
+show-apps-at-top = true
+show-trash = false
+# Reduce dock transparency.
+transparency-mode = 'FIXED'
+# Use lines instead of dots to indicate open apps.
+running-indicator-style = 'SEGMENTED'
+
+[org.gnome.shell.extensions.desktop-icons]
+show-home = false
+show-trash = false
+icon-size = 'small'
+
+# Open dash to app list.
+[org.gnome.mutter]
+overlay-key = ''
+[org.gnome.shell.keybindings]
+toggle-application-view = ['Super_L']
+
