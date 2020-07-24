@@ -30,18 +30,24 @@ use-custom-font = true
 [org.gnome.desktop.app-folders]
 folder-children = ['Graphics', 'AudioVideo', 'Network', 'Office', 'Development', 'System', 'Settings', 'Utility', 'Game', 'Education', 'Wasta']
 
-[org.gnome.desktop.peripherals.input-devices]
-click-method = 'default'
+[org.gnome.desktop.background]
+picture-uri = 'file:///usr/share/backgrounds/wasta/clarity_by_sigi_sagi.jpg'
+
+[org.gnome.desktop.peripherals.touchpad]
+click-method = 'fingers'
 disable-while-typing = true
-natural-scroll = false
+natural-scroll = true
 tap-to-click = true
-scrolling-method = 'two-finger-scrolling'
+scroll-method = 'two-finger-scrolling'
 
 [org.gnome.desktop.privacy]
 recent-files-max-age = 30
 
+[org.gnome.desktop.screensaver]
+picture-uri = 'file:///usr/share/backgrounds/wasta/clarity_by_sigi_sagi.jpg'
+
 [org.gnome.desktop.session]
-session-name = 'gnome'
+#session-name = 'wasta'
 
 [org.gnome.desktop.sound]
 event-sounds = false
@@ -69,7 +75,7 @@ default-search = 'DuckDuckGo'
 ### Mutter Preferences ###
 [org.gnome.mutter]
 attach-modal-dialogs = true
-edge-tiling = true
+edge-tiling = false
 dynamic-workspaces = true
 workspaces-only-on-primary = true
 focus-change-on-pointer-rest = true
@@ -107,7 +113,7 @@ start-with-sidebar = true
 
 ### Settings-Daemon  ###
 [org.gnome.settings-daemon.plugins.media-keys]
-home = ['<Ctrl><Shift>h']
+home = '<Ctrl><Shift>h'
 
 [org.gnome.settings-daemon.plugins.power]
 button-power = 'interactive'
@@ -128,13 +134,12 @@ antialiasing = 'rgba'
 
 
 ### GNOME Shell & Extensions ###
-[org.gnome.shell.extensions.dash-to-dock]
+[org.gnome.shell.extensions.dash-to-dock:wastagnome]
 autohide = true
 background-opacity = 0.9
-click-action = 'focus-or-previews'
+click-action = 'previews'
 custom-theme-shrink = true
 custom-theme-customize-running-dots = true
-#custom-theme-running-dots-color = '#e95420'
 custom-theme-running-dots-color = '#1e90ff'
 custom-theme-running-dots-border-color = '#1e90ff'
 dash-max-icon-size = 36
@@ -145,13 +150,12 @@ intellihide = false
 intellihide-mode = 'ALL_WINDOWS'
 # Put "apps" button at the "top" (left) end of dock.
 show-apps-at-top = true
-show-trash = false
 # Reduce dock transparency.
 transparency-mode = 'FIXED'
 # Use lines instead of dots to indicate open apps.
-running-indicator-style = 'SEGMENTED'
+running-indicator-style = 'METRO'
 
-[org.gnome.shell.extensions.desktop-icons]
+[org.gnome.shell.extensions.desktop-icons:wastagnome]
 show-home = false
 show-trash = false
 icon-size = 'small'
@@ -161,4 +165,3 @@ icon-size = 'small'
 overlay-key = ''
 [org.gnome.shell.keybindings]
 toggle-application-view = ['Super_L']
-
