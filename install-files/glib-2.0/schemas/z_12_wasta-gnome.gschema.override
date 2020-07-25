@@ -134,28 +134,7 @@ antialiasing = 'rgba'
 
 
 ### GNOME Shell & Extensions ###
-[org.gnome.shell.extensions.dash-to-dock:wastagnome]
-autohide = true
-background-opacity = 0.9
-click-action = 'previews'
-custom-theme-shrink = true
-custom-theme-customize-running-dots = true
-custom-theme-running-dots-color = '#1e90ff'
-custom-theme-running-dots-border-color = '#1e90ff'
-dash-max-icon-size = 36
-dock-fixed = true
-dock-position = 'BOTTOM'
-extend-height = true
-intellihide = false
-intellihide-mode = 'ALL_WINDOWS'
-# Put "apps" button at the "top" (left) end of dock.
-show-apps-at-top = true
-# Reduce dock transparency.
-transparency-mode = 'FIXED'
-# Use lines instead of dots to indicate open apps.
-running-indicator-style = 'METRO'
-
-[org.gnome.shell.extensions.desktop-icons:wastagnome]
+[org.gnome.shell.extensions.desktop-icons:wasta]
 show-home = false
 show-trash = false
 icon-size = 'small'
