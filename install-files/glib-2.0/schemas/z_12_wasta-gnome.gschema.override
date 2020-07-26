@@ -33,6 +33,10 @@ folder-children = ['Graphics', 'AudioVideo', 'Network', 'Office', 'Development',
 [org.gnome.desktop.background]
 picture-uri = 'file:///usr/share/backgrounds/wasta/clarity_by_sigi_sagi.jpg'
 
+[org.gnome.desktop.interface:wasta]
+gtk-theme = 'Ambiance'
+show-battery-percentage = true
+
 [org.gnome.desktop.peripherals.touchpad:wasta]
 click-method = 'fingers'
 disable-while-typing = true
@@ -144,3 +148,4 @@ icon-size = 'small'
 overlay-key = ''
 [org.gnome.shell.keybindings:wasta]
 toggle-application-view = ['Super_L']
+
