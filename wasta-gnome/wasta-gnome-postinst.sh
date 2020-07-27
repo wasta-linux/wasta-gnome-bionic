@@ -52,6 +52,11 @@ glib-compile-schemas /usr/share/gnome-shell/extensions/dash-to-panel@jderose9.gi
 # Sending any "error" to null (if key not found don't want to worry user)
 glib-compile-schemas /usr/share/glib-2.0/schemas/ > /dev/null 2>&1 || true;
 
+echo
+echo "*** Restarting GNOME Shell"
+echo
+killall -SIGQUIT gnome-shell
+
 # ------------------------------------------------------------------------------
 # Finished
 # ------------------------------------------------------------------------------
