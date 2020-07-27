@@ -42,10 +42,10 @@ echo
 echo "*** Updating dconf / gsettings default values"
 echo
 
-# Updating dconf first to incorporate those direct entries first.
+# Updating dconf before GNOME schemas because they depend on its entries.
 dconf update
 
-# GNOME Extension schemas: separate location from System schemas.
+# GNOME Extension schemas: separate locations from System schemas.
 glib-compile-schemas /usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/schemas/ > /dev/null 2>&1 || true;
 
 # MAIN System schemas: we have placed our override file in this directory

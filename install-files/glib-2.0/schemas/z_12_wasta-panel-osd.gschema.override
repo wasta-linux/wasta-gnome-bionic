@@ -1,0 +1,4 @@
+[org/gnome/shell/extensions/panel-osd]
+x-pos = 100.0
+y-pos = 10.0
+
