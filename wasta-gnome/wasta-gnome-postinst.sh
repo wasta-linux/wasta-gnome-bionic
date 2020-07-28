@@ -54,6 +54,8 @@ dconf update
 # GNOME Extension schemas: separate locations from System schemas.
 glib-compile-schemas /usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/schemas/ > /dev/null 2>&1 || true;
 
+glib-compile-schemas /usr/share/gnome-shell/extensions/panel-osd@berend.de.schouwer.gmail.com/schemas/ > /dev/null 2>&1 || true;
+
 # MAIN System schemas: we have placed our override file in this directory
 # Sending any "error" to null (if key not found don't want to worry user)
 glib-compile-schemas /usr/share/glib-2.0/schemas/ > /dev/null 2>&1 || true;

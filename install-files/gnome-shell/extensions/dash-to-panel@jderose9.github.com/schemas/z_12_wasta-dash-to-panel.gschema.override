@@ -35,10 +35,14 @@ show-favorites-all-monitors = false
 show-showdesktop-hover = true
 show-status-menu-all-monitors = false
 status-icon-padding = 2
-trans-panel-opacity = 0.8
+trans-bg-color = '#30343a'
+trans-dynamic-anim-target = 0.9
+trans-panel-opacity = 0.7
+trans-use-custom-bg = true
 trans-use-custom-opacity = true
+trans-use-dynamic-opacity = true
 tray-padding = 6
 window-preview-padding = 6
 window-preview-show-title = false
-window-preview-size = 180
+window-preview-size = 200
 
