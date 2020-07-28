@@ -8,7 +8,7 @@ Homepage: https://github.com/wasta-linux/wasta-gnome-bionic
 
 Package: wasta-gnome-bionic
 Architecture: all
-Depends: gnome-shell, nautilus, gnome-shell-extension-appindicator, wasta-backgrounds, wasta-core-bionic, wasta-multidesktop-bionic, wasta-papirus, ${misc:Depends}
+Depends: gnome-shell, nautilus, wasta-backgrounds, wasta-core-bionic, wasta-multidesktop-bionic, wasta-papirus, ${misc:Depends}
 Recommends: bookletimposer, wasta-vertex-ubuntu
 Description: Wasta-Linux GNOME for Ubuntu 18.04 Bionic
  Wasta-Linux 18.04 Bionic GNOME core adjustments.
