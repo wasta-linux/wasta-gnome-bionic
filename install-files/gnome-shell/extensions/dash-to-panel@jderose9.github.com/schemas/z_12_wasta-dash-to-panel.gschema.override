@@ -10,7 +10,7 @@
 #
 # ==============================================================================
 
-[org.gnome.shell.extensions.dash-to-panel:wasta]
+[org.gnome.shell.extensions.dash-to-panel:wasta-gnome]
 appicon-margin = 4
 dot-color-1 = '#1e90ff'
 dot-color-2 = '#1e90ff'
@@ -22,9 +22,23 @@ dot-style-unfocused = 'METRO'
 focus-highlight-color = '#1e90ff'
 focus-highlight-opacity = 30
 hot-keys = true
+multi-monitors = false
 peek-mode-opacity = 0
+preview-custom-opacity = 0
+scroll-panel-action = 'CHANGE_VOLUME'
+show-apps-icon-file = '/usr/share/icons/hicolor/scalable/emblems/wasta-linux-squircle.svg'
+show-apps-icon-side-padding = 12
 showdesktop-button-width = 8
 show-showdesktop-button = true
+show-showdesktop-time = 500
+show-favorites-all-monitors = false
+show-showdesktop-hover = true
+show-status-menu-all-monitors = false
 status-icon-padding = 2
+trans-panel-opacity = 0.8
+trans-use-custom-opacity = true
 tray-padding = 4
+window-preview-padding = 6
+window-preview-show-title = false
+window-preview-size = 180
 
