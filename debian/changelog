@@ -1,3 +1,9 @@
+wasta-gnome-bionic (0.1.1) bionic; urgency=medium
+
+  * Fixed some overlooked gschema override settings.
+
+ -- Nate Marti <nate_marti@sil.org>  Wed, 29 Jul 2020 11:25:01 +0100
+
 wasta-gnome-bionic (0.1) bionic; urgency=medium
 
   * Initial release.

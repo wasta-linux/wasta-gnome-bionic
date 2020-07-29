@@ -90,6 +90,7 @@ sort-directories-first = true
 [org.gnome.nautilus.desktop:wasta-gnome]
 home-icon-visible = false
 trash-icon-visible = false
+volumes-visible = false
 
 [org.gnome.nautilus.icon-view:wasta-gnome]
 default-zoom-level = 'small'
@@ -107,7 +108,7 @@ show-hidden-files = false
 thumbnail-limit = uint64 4
 
 [org.gnome.nautilus.window-state:wasta-gnome]
-sidebar-width = 165
+sidebar-width = 250
 start-with-sidebar = true
 
 
@@ -142,6 +143,9 @@ enabled-extensions = ["dash-to-panel@jderose9.github.com", "desktop-icons@csoria
 show-home = false
 show-trash = false
 icon-size = 'small'
+
+[org.gnome.shell.overrides:wasta-gnome]
+edge-tiling = false
 
 # Open dash to app list.
 [org.gnome.mutter:wasta-gnome]
