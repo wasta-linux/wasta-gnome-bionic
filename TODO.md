@@ -1,3 +1,5 @@
+- [ ] Reset app folders to defaults: org.gnome.desktop.app-folders folder-children
+- [ ] Get rid of edge tiling: org.gnome.shell.overrides edge-tiling = false
 - [x] Move notifications to bottom right.
 - [ ] Enable context menu actiions in Nautilus (prob. not going to happen in bionic b/c of PPA needed)
   - [ ] ~~add PPA: add-apt-repository ppa:daniel-marynicz/filemanager-actions (PPA has no arm64 builds.)~~
