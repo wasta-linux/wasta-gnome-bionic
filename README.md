@@ -1,3 +1,8 @@
+### Screenshots
+!(Desktop)[/screenshots/desktop.png]
+!(App Grid)[/screenshots/app-grid.png]
+!(System Menu)[/screenshots/menu.png]
+
 ### To-Do:
 - [x] Move notifications to bottom right.
 - [ ] Enable context menu actiions in Nautilus (prob. not going to happen in bionic b/c of PPA needed)
