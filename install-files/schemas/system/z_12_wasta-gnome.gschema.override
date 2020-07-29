@@ -135,6 +135,7 @@ antialiasing = 'rgba'
 ### GNOME Shell & Extensions ###
 [org.gnome.shell:wasta-gnome]
 app-picker-view = 1
+favorite-apps = ['shutdown-for-wasta-gnome.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop', 'wasta-backup.desktop', 'wasta-resources.desktop']
 
 [org.gnome.shell.extensions:wasta-gnome]
 enabled-extensions = ["dash-to-panel@jderose9.github.com", "desktop-icons@csoriano", "ubuntu-appindicators@ubuntu.com"]
