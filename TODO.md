@@ -1,8 +1,6 @@
 - [x] Add screensaver / lock screen support (gnome-screensaver)
-- [ ] Add desktop-icons extension (Nautilus only handles a few)
-- [ ] Reset app folders to new "defaults" (but this is getting set back to Ubuntu defaults between sessions; wasta-multidesktop stuff?): org.gnome.desktop.app-folders folder-children
-- [ ] User-selected background gets reset between sessions (wasta-multidesktop?)
-- [ ] Hide Nemo and unhide Nautilus app launchers (wasta-multidesktop?)
+  - [ ] Disable gnome-screensaver in other sessions with wasta-login.sh
+- [ ] Fix problem of app folders getting set to "user-defined" values (['Utility', 'Sundry', 'YaST']): org.gnome.desktop.app-folders folder-children
 - [x] Add "Shutdown" button.
 - [x] Open new windows in the center of the screen
 - [x] Move notifications to bottom right.
