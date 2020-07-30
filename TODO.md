@@ -1,3 +1,4 @@
+- [x] Add screensaver / lock screen support (gnome-screensaver)
 - [ ] Add desktop-icons extension (Nautilus only handles a few)
 - [ ] Reset app folders to new "defaults" (but this is getting set back to Ubuntu defaults between sessions; wasta-multidesktop stuff?): org.gnome.desktop.app-folders folder-children
 - [ ] User-selected background gets reset between sessions (wasta-multidesktop?)
