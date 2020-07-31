@@ -1,3 +1,9 @@
+wasta-gnome-bionic (0.1.2) bionic; urgency=medium
+
+  * Added some features to Nautilus context menu
+
+ -- Nate Marti <nate_marti@sil.org>  Fri, 31 Jul 2020 14:48:08 +0100
+
 wasta-gnome-bionic (0.1.1) bionic; urgency=medium
 
   * Fixed some overlooked gschema override settings.
