@@ -1,6 +1,5 @@
-- [x] Add screensaver / lock screen support (gnome-screensaver)
-  - [ ] Disable gnome-screensaver in other sessions with wasta-login.sh
 - [ ] Fix problem of app folders getting set to "user-defined" values (['Utility', 'Sundry', 'YaST']): org.gnome.desktop.app-folders folder-children
+- [x] Add screensaver / lock screen support (gnome-screensaver)
 - [x] Add "Shutdown" button.
 - [x] Open new windows in the center of the screen
 - [x] Move notifications to bottom right.

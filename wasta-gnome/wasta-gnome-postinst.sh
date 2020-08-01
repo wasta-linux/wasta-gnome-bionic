@@ -41,6 +41,11 @@ DIR=/usr/share/wasta-gnome
 # Add Wasta icon to slick-greeter desktop entry.
 cp -l /usr/share/wasta-multidesktop/resources/wl-round-22.png /usr/share/slick-greeter/badges/wasta-gnome.png
 
+# Disable gnome-screensaver by default (re-enabled at wasta-gnome session login).
+if [[ -e /usr/share/dbus-1/services/org.gnome.ScreenSaver.service ]]; then
+    mv /usr/share/dbus-1/services/org.gnome.ScreenSaver.service{,.disabled}
+fi
+
 # ------------------------------------------------------------------------------
 # Dconf / Gsettings Default Value adjustments
 # ------------------------------------------------------------------------------
