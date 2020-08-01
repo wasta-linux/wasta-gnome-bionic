@@ -1,3 +1,9 @@
+wasta-gnome-bionic (0.1.3) bionic; urgency=medium
+
+  * Disable gnome-screensaver when not wasta-gnome session.
+
+ -- Nate Marti <nate_marti@sil.org>  Sat, 01 Aug 2020 13:08:36 +0100
+
 wasta-gnome-bionic (0.1.2) bionic; urgency=medium
 
   * Added some features to Nautilus context menu
