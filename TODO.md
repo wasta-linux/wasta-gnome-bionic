@@ -3,7 +3,8 @@
 - [x] Add "Shutdown" button.
 - [x] Open new windows in the center of the screen
 - [x] Move notifications to bottom right.
-- [ ] Enable context menu actiions in Nautilus (prob. not going to happen in bionic b/c of PPA needed)
+- [x] Enable (some) context menu actiions in Nautilus
   - [ ] ~~add PPA: add-apt-repository ppa:daniel-marynicz/filemanager-actions (PPA has no arm64 builds.)~~
-  - [ ] add similar actions as are in Nemo-actions (see wasta-gnome-bionic)
+  - [x] resize and/or rotate images (via Nautilus extension)
+  - [x] add bulk rename (built into Nautilus when adding tracker package)
 - [x] Add Mounted Drives icon to panel.
