@@ -1,3 +1,9 @@
+wasta-gnome-bionic (0.1.5) bionic; urgency=medium
+
+  * Added app names tooltip extension
+
+ -- Nate Marti <nate_marti@sil.org>  Thu, 13 Aug 2020 06:12:55 +0100
+
 wasta-gnome-bionic (0.1.4) bionic; urgency=medium
 
   * Fixed bulk rename entry in Nautilus context menu.
