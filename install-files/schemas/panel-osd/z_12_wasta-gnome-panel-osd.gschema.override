@@ -1,0 +1,9 @@
+# z_12_wasta-gnome-panel-osd.gschema.override
+#
+#   2020-07-22 ndm: initial settings for focal.
+#
+# ==============================================================================
+
+[org.gnome.shell.extensions.panel-osd:wasta-gnome]
+x-pos = 100.0
+y-pos = 5.0

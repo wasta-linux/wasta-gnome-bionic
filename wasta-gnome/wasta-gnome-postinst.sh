@@ -57,6 +57,8 @@ echo
 dconf update
 
 # GNOME Extension schemas: separate locations from System schemas.
+glib-compile-schemas /usr/share/gnome-shell/extensions/applications-overview-tooltip@RaphaelRochet/schemas/ > /dev/null 2>&1 || true;
+
 glib-compile-schemas /usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/schemas/ > /dev/null 2>&1 || true;
 
 glib-compile-schemas /usr/share/gnome-shell/extensions/panel-osd@berend.de.schouwer.gmail.com/schemas/ > /dev/null 2>&1 || true;
