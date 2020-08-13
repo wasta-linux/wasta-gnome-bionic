@@ -3,7 +3,7 @@ install-files/dconf                    etc
 install-files/gnome-session/*          usr/share/gnome-session/sessions
 install-files/gnome-shell              usr/share
 install-files/lightdm.conf.d           etc/lightdm
-install-files/schemas/applications-overview-tooltip  usr/share/gnome-shell/extensions/applications-overview-tooltip@RaphaelRochet/schemas
+install-files/schemas/applications-overview-tooltip/*  usr/share/gnome-shell/extensions/applications-overview-tooltip@RaphaelRochet/schemas
 install-files/schemas/dash-to-panel/*  usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/schemas
 install-files/schemas/panel-osd/*      usr/share/gnome-shell/extensions/panel-osd@berend.de.schouwer.gmail.com/schemas
 install-files/schemas/system/*         usr/share/glib-2.0/schemas
